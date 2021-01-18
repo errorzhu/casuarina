@@ -17,7 +17,7 @@ if __name__ == '__main__':
         'Sec-Fetch-Mode': 'navigate',
         'Sec-Fetch-User': '?1',
         'Sec-Fetch-Dest': 'document',
-        'Referer': 'https://worldwide.espacenet.com/patent/search/family/026602061/publication/EP1329508A1?q=EP1329508A1',
+        'Referer': 'https://worldwide.espacenet.com/patent/search/family/026602061/publication/WO9815179A1?q=WO9815179A1',
         'Accept-Encoding': 'gzip, deflate, br',
         'Accept-Language': 'zh-CN,zh;q=0.9',
     }
@@ -26,7 +26,7 @@ if __name__ == '__main__':
     # proxies = proxy
 
     response = requests.get(
-        'https://worldwide.espacenet.com/3.2/rest-services/images/documents/EP/1329508/A1/formats/pdf/pages/?EPO-Trace-Id=tp34mw-9nuttg-XXX-000009',
+        'https://worldwide.espacenet.com/3.2/rest-services/images/documents/WO/9815179/A1/formats/pdf/pages/?EPO-Trace-Id=tp34mw-9nuttg-XXX-000009',
         verify=False, headers=headers
     )
     with open("test2.pdf", 'wb') as ff:
