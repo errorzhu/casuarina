@@ -26,7 +26,7 @@ if __name__ == '__main__':
     # proxies = proxy
 
     response = requests.get(
-        'https://worldwide.espacenet.com/3.2/rest-services/images/documents/WO/9815179/A1/formats/pdf/pages/?EPO-Trace-Id=tp34mw-9nuttg-XXX-000009',
+        'https://worldwide.espacenet.com/3.2/rest-services/images/documents/IT/MI20022022/A1/formats/pdf/pages/?EPO-Trace-Id=tp34mw-9nuttg-XXX-000009',
         verify=False, headers=headers
     )
     with open("test2.pdf", 'wb') as ff:

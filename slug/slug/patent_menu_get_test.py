@@ -35,6 +35,11 @@ proxy = {"https": "http://127.0.0.1:8888", "http": "http://127.0.0.1:8888"}
 #
 
 response = requests.post(url=base_url, data=json.dumps(data), headers=headers, verify=False, proxies=proxy)
-print(len(response.json()["hits"]))
+#print(len(response.json()["hits"]))
+response_json=response.json()
+doc_num=len(response_json["hits"])
+for i in range(doc_num):
+    print(response_json["hits"][i]["familyNumber"])
+    print(response_json["hits"][i]["hits"][0]["fields"]["publications.pn_docdb"][0])
 
 #print(response.status_code)
